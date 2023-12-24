@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UFT-8">
+      <meta name="author" content="Jeff Otiende">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>FORM</title>
+      <link rel="stylesheet" href="form.css">
+  </head>
+
+  <body>
+      <h1 id="title">FORM</h1>
+      <p id="description">Welcome & thank you for taking the time to fill out this form</p>
+
+      <!--create a form-->
+     <form id="survey-form">
+
+          <!--input type name-->
+          <label id="name-label"  >Name<input type="text" id="name" placeholder="Enter your name" required></label>
+          <!--input type email-->
+          <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+          <!--input type number-->
+          <label id="number-label">Age<input type="number" id="number" name="age" placeholder="Age" pattern="[1-9]{2-3}" min="18" max="120" value="12">
+
+          <!--dropdown options-->
+         <Label>Select your gender below.</label>
+         <select id="dropdown">
+             <option value="">(Gender)</option>
+             <option  value="1">Male</option>
+             <option  value="1">Transgender</option>
+             <option  value="1">Intersex</option>
+             <option  value="2">Female</option>
+         </select>
+
+         <!--input type radio button-->
+         <label>Are you</label>
+         <div class="wrapper-class">
+             <label><input type="radio" name="marital-status" value="single" >Single</label>
+             <label><input type="radio"name="marital-status" value="married" >Engaged</label>
+             <label><input type="radio"name="marital-status" value="married" >Married</label>
+             <label><input type="radio"name="marital-status" value="married" >Divorced</label>
+         </div> 
+
+         <!--input type type checkbox-->
+         <label>What's your level of education?</label>
+         <div class="wrapper-class">
+             <label><input type="checkbox" value="attribute" >Primary school</label>
+             <label><input type="checkbox" value="attribute">Secondary school</label>
+             <label><input type="checkbox" value="attribute"> Autodidact/Pragmastic</label>
+             <label><input type="checkbox" value="attribute">Skilled</label>
+             <label><input type="checkbox" value="attribute">Tertiary</label>
+             <label><input type="checkbox" value="attribute">University</label>
+         </div>
+
+         <!--multi-line text input control-->
+         <label>Additional comments:
+         <textarea name="comments"id="comments" placeholder="What do you think about us?" class="textarea"></textarea>
+
+         <!--type button submit-->
+         <button type="submit value=submit" id="submit">Submit</button>
+ 
+        </form>
+    </body>
+</html>
